@@ -6,6 +6,6 @@
 
 def prime?(num)
   result = false
-  (2..num).to_a.each_with_index{|num, idx| result = true if num % (idx+1) }
+  (2..num).to_a.each_with_index{|num, idx| result = true unless num % (idx+1) == 0 }
   result
 end
