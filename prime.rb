@@ -7,4 +7,5 @@
 def prime?(arg)
   result = true
   return !result if arg <= 0
+  if arg
 end
