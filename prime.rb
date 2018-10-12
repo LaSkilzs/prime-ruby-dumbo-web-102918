@@ -4,3 +4,8 @@
 # if num % i except itself == 0 (num not prime)
 
 
+def prime?(num)
+  result = false
+  (2..num).each_with_index{|num, idx| result = true if num % idx }
+  result
+end
