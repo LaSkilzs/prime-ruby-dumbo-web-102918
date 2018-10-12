@@ -4,7 +4,7 @@
 # if num % i except itself == 0 (num not prime)
 
 
-def prime?(num)
+def prime?(arg)
   result = []
   (2..arg).to_a.each_with_index do |num, idx|
     arg % (idx+1) == 0  ? result << true : result << false
