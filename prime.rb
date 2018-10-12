@@ -1,1 +1,6 @@
-# Add  code here!
+# Prime only divisible by one and itself
+# take num
+#iterate from 2 to num
+# if num % i except itself == 0 (num not prime)
+
+
