@@ -5,7 +5,9 @@
 
 
 def prime?(arg)
+return false if arg <= 1
+return true if arg == 2
   result = true
-  return !result if arg <= 0
-  if arg
+  (3..arg).to_a.each_with_index{|num, idx|result = false if arg % (idx+1) == 0 && (idx+1) != 1}
+  result
 end
