@@ -5,12 +5,6 @@
 
 
 def prime?(arg)
-  
-  
-  result = []
-  (2..arg).to_a.each_with_index do |num, idx|
-    arg % (idx+1) == 0  ? result << true : result << false
-  end
-  return false if result == nil 
-  result[1..-1].uniq.count > 1 ? true :false
+  result = true
+  return !result if arg <= 0
 end
