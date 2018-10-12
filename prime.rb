@@ -5,7 +5,9 @@
 
 
 def prime?(num)
-  result = false
-  (2..num).to_a.each_with_index{|num, idx| result = true unless num % (idx+1) == 0 }
-  result
+  result = []
+  (2..arg).to_a.each_with_index do |num, idx|
+    arg % (idx+1) == 0  ? result << true : result << false
+  end
+  result[1..-1].uniq.count > 1 ? true :false
 end
