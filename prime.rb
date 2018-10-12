@@ -6,6 +6,7 @@
 
 def prime?(arg)
   return false if arg <= 0
+  
   result = []
   (2..arg).to_a.each_with_index do |num, idx|
     arg % (idx+1) == 0  ? result << true : result << false
